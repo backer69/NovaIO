@@ -31,9 +31,28 @@ export interface AdminCredentials {
     name: string;
 }
 
+export interface FinanceEntry {
+    id: string;
+    type: 'INCOME' | 'EXPENSE';
+    amount: number;
+    category: string;
+    description: string;
+    date: string;
+    createdAt: string;
+}
+
+export interface CalendarEvent {
+    id: string;
+    title: string;
+    startAt: string;
+    endAt: string;
+    meetLink?: string;
+    createdAt: string;
+}
+
 export interface DatabaseSchema {
     registrations: RegistrationRecord[];
     admins: AdminCredentials[];
-    finance: any[];
-    calendar: any[];
+    finance: FinanceEntry[];
+    calendar: CalendarEvent[];
 }

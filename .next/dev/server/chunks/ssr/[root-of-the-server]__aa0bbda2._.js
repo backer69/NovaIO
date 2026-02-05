@@ -27,10 +27,20 @@ const supabase = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" :
 "use strict";
 
 __turbopack_context__.s([
+    "addCalendarEvent",
+    ()=>addCalendarEvent,
+    "addFinanceEntry",
+    ()=>addFinanceEntry,
     "addRegistration",
     ()=>addRegistration,
     "getAdminByEmail",
     ()=>getAdminByEmail,
+    "getCalendarEvents",
+    ()=>getCalendarEvents,
+    "getDashboardStats",
+    ()=>getDashboardStats,
+    "getFinanceEntries",
+    ()=>getFinanceEntries,
     "getRegistrations",
     ()=>getRegistrations
 ]);
@@ -86,6 +96,56 @@ const getAdminByEmail = async (email)=>{
     // Fallback
     const db = readLocalDb();
     return db.admins.find((admin)=>admin.email === email);
+};
+const getFinanceEntries = async ()=>{
+    if (isSupabaseEnabled()) //TURBOPACK unreachable
+    ;
+    return readLocalDb().finance;
+};
+const addFinanceEntry = async (entry)=>{
+    if (isSupabaseEnabled()) //TURBOPACK unreachable
+    ;
+    const db = readLocalDb();
+    const newEntry = {
+        ...entry,
+        id: crypto.randomUUID(),
+        createdAt: new Date().toISOString()
+    };
+    db.finance.push(newEntry);
+    writeLocalDb(db);
+};
+const getCalendarEvents = async ()=>{
+    if (isSupabaseEnabled()) //TURBOPACK unreachable
+    ;
+    return readLocalDb().calendar;
+};
+const addCalendarEvent = async (event)=>{
+    if (isSupabaseEnabled()) //TURBOPACK unreachable
+    ;
+    const db = readLocalDb();
+    const newEvent = {
+        ...event,
+        id: crypto.randomUUID(),
+        createdAt: new Date().toISOString()
+    };
+    db.calendar.push(newEvent);
+    writeLocalDb(db);
+};
+const getDashboardStats = async ()=>{
+    const registrations = await getRegistrations();
+    const finance = await getFinanceEntries();
+    const calendar = await getCalendarEvents();
+    const totalRevenue = finance.filter((e)=>e.type === 'INCOME').reduce((sum, e)=>sum + Number(e.amount), 0);
+    const pendingRegistrations = registrations.filter((r)=>r.status === 'PENDING').length;
+    // Logic for "active webinars": let's say events that haven't ended yet
+    const now = new Date();
+    const activeWebinars = calendar.filter((e)=>new Date(e.endAt) > now).length;
+    return {
+        totalRevenue,
+        totalRegistrations: registrations.length,
+        activeWebinars,
+        pendingRegistrations
+    };
 };
 }),
 "[project]/lib/auth.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {

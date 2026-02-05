@@ -3,7 +3,7 @@
     "003d4005e6bab4f4f45649170d15ae99bc807b6b19": {
       "workers": {
         "app/admin/dashboard/calendar/page": {
-          "moduleId": 1048,
+          "moduleId": 84420,
           "async": false,
           "exportedName": "logout",
           "filename": "lib/auth.ts"
@@ -14,6 +14,21 @@
       },
       "exportedName": "logout",
       "filename": "lib/auth.ts"
+    },
+    "408bbdbb380ef4dcd7b34cacf71d467f8802be9b10": {
+      "workers": {
+        "app/admin/dashboard/calendar/page": {
+          "moduleId": 84420,
+          "async": false,
+          "exportedName": "createCalendarEventAction",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/calendar/page": "action-browser"
+      },
+      "exportedName": "createCalendarEventAction",
+      "filename": "lib/actions.ts"
     }
   },
   "edge": {}

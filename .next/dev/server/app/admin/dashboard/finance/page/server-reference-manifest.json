@@ -3,7 +3,7 @@
     "00dcae2ad9f7ba68b0aa16deeeec50b4b81ae610d5": {
       "workers": {
         "app/admin/dashboard/finance/page": {
-          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "logout",
           "filename": "lib/auth.ts"
@@ -14,6 +14,21 @@
       },
       "exportedName": "logout",
       "filename": "lib/auth.ts"
+    },
+    "40e49910126a85fc34196c800eae66036dea9ea7fc": {
+      "workers": {
+        "app/admin/dashboard/finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createFinanceEntryAction",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/finance/page": "action-browser"
+      },
+      "exportedName": "createFinanceEntryAction",
+      "filename": "lib/actions.ts"
     }
   },
   "edge": {}

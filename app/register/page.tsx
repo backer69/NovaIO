@@ -83,7 +83,7 @@ export default function PersonalDetails() {
                     </div>
 
                     <div className="space-y-2">
-                        <label htmlFor="phone" className="text-sm font-medium">Phone</label>
+                        <label htmlFor="phone" className="text-sm font-medium">Phone Number</label>
                         <Input
                             id="phone"
                             type="tel"

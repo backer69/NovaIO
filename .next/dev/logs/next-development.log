@@ -1,641 +1,611 @@
-[00:00:01.652] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.925] Server  LOG     ✓ Ready in 1364ms
-[00:00:15.777] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:15.873] Server  LOG       Reload env: .env.local
-[00:16:16.251] Server  LOG       Reload env: .env.local
-[01:08:22.959] Server  LOG     ✓ Compiled in 647ms
-[01:09:07.556] Server  LOG     ✓ Compiled in 95ms
-[01:09:08.479] Server  LOG     ✓ Compiled in 298ms
-[01:09:08.794] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+[00:00:07.248] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:07.744] Server  LOG     ✓ Ready in 6.7s
+[00:01:31.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:45.000] Server  WARN    Supabase URL or Key missing. Database features will fail.
+[00:02:05.874] Server  ERROR   ⨯ ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
-'import', and 'export' cannot be used outside of module code
+
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:12:32.811] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:06.046] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:12:32.811] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:06.157] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:12:34.791] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:08.028] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:12:34.791] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:08.322] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:12:36.786] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:09.874] Server  ERROR   ⨯ ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:20:55.794] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:10.343] Browser ERROR   uncaughtError: Error: ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:20:59.798] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:02:10.493] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:20:59.798] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:10.692] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:20:59.798] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:15.477] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:15.676] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:21:00.808] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:15.676] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:21:02.796] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:24.438] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:24.615] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:21:07.788] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:02:24.615] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:21:07.788] Browser ERROR   ./app/register/motivation/page.tsx:18:5
-Parsing ecmascript source code failed
-  16 |     const [message, setMessage] = useState(draft.motivation?.message || "");
-  17 |
-> 18 |     import { submitRegistration } from "@/lib/actions";
-     |     ^^^^^^
-  19 |
-  20 |     // ... inside component ...
-  21 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-'import', and 'export' cannot be used outside of module code
+https://nextjs.org/docs/messages/module-not-found
+[00:06:00.517] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/register/motivation/page.tsx [Client Component Browser]
-    ./app/register/motivation/page.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/register/motivation/page.tsx [Client Component SSR]
-    ./app/register/motivation/page.tsx [Server Component]
-[01:21:42.695] Server  LOG     ✓ Compiled in 168ms
-[01:21:45.208] Server  LOG     ✓ Compiled in 650ms
-[01:24:20.773] Server  LOG     ✓ Compiled in 83ms
-[01:26:06.718] Server  LOG     ✓ Compiled in 33ms
-[01:38:05.929] Server  WARN    Supabase URL or Key missing. Database features will fail.
-[01:41:17.395] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:41:45.065] Server  WARN    Supabase URL or Key missing. Database features will fail.
-[01:44:39.486] Server  LOG     ✓ Compiled in 222ms
-[01:44:40.788] Browser ERROR   ./app/admin/dashboard/layout.tsx:20:1
-Parsing ecmascript source code failed
-  18 | const pathname = usePathname();
-  19 |
-> 20 | return (
-     | ^^^^^^^^
-> 21 |     <div className="flex min-h-screen bg-slate-50">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 22 |         {/* Mobile Overlay */}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 23 |         {isMobileMenuOpen && (
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 24 |             <div
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 25 |                 className="fixed inset-0 z-40 bg-black/50 md:hidden"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 26 |                 onClick={() => setIsMobileMenuOpen(false)}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 27 |             />
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 28 |         )}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 29 |
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 30 |         {/* Sidebar */}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 31 |         <aside className={cn(
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 32 |             "fixed inset-y-0 left-0 z-50 w-64 border-r border-slate-200 bg-white transition-transform duration-200 ease-in-out md:translate-x-0",
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 33 |             isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 34 |         )}>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 35 |             <div className="flex h-16 items-center border-b border-slate-200 px-6 justify-between">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 36 |                 <span className="text-lg font-bold text-teal-600">NovaIO Admin</span>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 37 |                 <button
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 38 |                     onClick={() => setIsMobileMenuOpen(false)}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 39 |                     className="md:hidden text-slate-500 hover:text-slate-700"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 40 |                 >
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 41 |                     ✕
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 42 |                 </button>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 43 |             </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 44 |             <nav className="p-4 space-y-1">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 45 |                 {navItems.map((item) => (
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 46 |                     <Link
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 47 |                         key={item.href}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 48 |                         href={item.href}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 49 |                         onClick={() => setIsMobileMenuOpen(false)}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 50 |                         className={cn(
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 51 |                             "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 52 |                             pathname === item.href
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 53 |                                 ? "bg-teal-50 text-teal-700"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 54 |                                 : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 55 |                         )}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 56 |                     >
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 57 |                         <span className="text-lg">{item.icon}</span>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 58 |                         {item.label}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 59 |                     </Link>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 60 |                 ))}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 61 |             </nav>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 62 |             <div className="absolute bottom-4 left-4 right-4">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 63 |                 <form action={logout}>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 64 |                     <Button variant="outline" className="w-full justify-start text-red-500 hover:text-red-600 hover:bg-red-50">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 65 |                         <span className="mr-2">🚪</span> Log Out
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 66 |                     </Button>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 67 |                 </form>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 68 |             </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 69 |         </aside>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 70 |
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 71 |         {/* Main Content */}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 72 |         <main className="w-full md:pl-64 transition-all">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 73 |             <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-4 md:px-8">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 74 |                 <div className="flex items-center gap-4">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 75 |                     <button
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 76 |                         onClick={() => setIsMobileMenuOpen(true)}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 77 |                         className="mr-2 text-slate-500 md:hidden hover:text-slate-700"
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 78 |                     >
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 79 |                         <span className="text-2xl">☰</span>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 80 |                     </button>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 81 |                     <h1 className="text-xl font-semibold text-slate-800">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 82 |                         {navItems.find(i => i.href === pathname)?.label || "Dashboard"}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 83 |                     </h1>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 84 |                 </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 85 |                 <div className="flex items-center gap-4">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 86 |                     <div className="h-8 w-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-700 font-bold text-xs">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 87 |                         AD
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 88 |                     </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 89 |                 </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 90 |             </header>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 91 |             <div className="p-4 md:p-8">
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 92 |                 {children}
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 93 |             </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 94 |         </main>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 95 |     </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 96 | );
-     | ^^^
-  97 | }
-  98 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-Return statement is not allowed here
+https://nextjs.org/docs/messages/module-not-found
+[00:06:00.517] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/admin/dashboard/layout.tsx [Client Component Browser]
-    ./app/admin/dashboard/layout.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/admin/dashboard/layout.tsx [Client Component SSR]
-    ./app/admin/dashboard/layout.tsx [Server Component]
-[01:44:40.788] Browser ERROR   ./app/admin/dashboard/layout.tsx:22:1
-Parsing ecmascript source code failed
-   20 | const pathname = usePathname();
-   21 |
->  22 | return (
-      | ^^^^^^^^
->  23 |     <div className="flex min-h-screen bg-slate-50">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  24 |         {/* Mobile Overlay */}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  25 |         {isMobileMenuOpen && (
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  26 |             <div
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  27 |                 className="fixed inset-0 z-40 bg-black/50 md:hidden"
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  28 |                 onClick={() => setIsMobileMenuOpen(false)}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  29 |             />
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  30 |         )}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  31 |
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  32 |         {/* Sidebar */}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  33 |         <aside className={cn(
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  34 |             "fixed inset-y-0 left-0 z-50 w-64 border-r border-slate-200 bg-white transition-transform duration-200 ease-in-out md:translate-x-0",
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  35 |             isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  36 |         )}>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  37 |             <div className="flex h-16 items-center border-b border-slate-200 px-6 justify-between">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  38 |                 <span className="text-lg font-bold text-teal-600">NovaIO Admin</span>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  39 |                 <button
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  40 |                     onClick={() => setIsMobileMenuOpen(false)}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  41 |                     className="md:hidden text-slate-500 hover:text-slate-700"
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  42 |                 >
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  43 |                     ✕
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  44 |                 </button>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  45 |             </div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  46 |             <nav className="p-4 space-y-1">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  47 |                 {navItems.map((item) => (
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  48 |                     <Link
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  49 |                         key={item.href}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  50 |                         href={item.href}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  51 |                         onClick={() => setIsMobileMenuOpen(false)}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  52 |                         className={cn(
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  53 |                             "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  54 |                             pathname === item.href
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  55 |                                 ? "bg-teal-50 text-teal-700"
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  56 |                                 : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  57 |                         )}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  58 |                     >
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  59 |                         <span className="text-lg">{item.icon}</span>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  60 |                         {item.label}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  61 |                     </Link>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  62 |                 ))}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  63 |             </nav>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  64 |             <div className="absolute bottom-4 left-4 right-4">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  65 |                 <form action={logout}>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  66 |                     <Button variant="outline" className="w-full justify-start text-red-500 hover:text-red-600 hover:bg-red-50">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  67 |                         <span className="mr-2">🚪</span> Log Out
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  68 |                     </Button>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  69 |                 </form>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  70 |             </div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  71 |         </aside>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  72 |
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  73 |         {/* Main Content */}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  74 |         <main className="w-full md:pl-64 transition-all">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  75 |             <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-4 md:px-8">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  76 |                 <div className="flex items-center gap-4">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  77 |                     <button
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  78 |                         onClick={() => setIsMobileMenuOpen(true)}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  79 |                         className="mr-2 text-slate-500 md:hidden hover:text-slate-700"
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  80 |                     >
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  81 |                         <span className="text-2xl">☰</span>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  82 |                     </button>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  83 |                     <h1 className="text-xl font-semibold text-slate-800">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  84 |                         {navItems.find(i => i.href === pathname)?.label || "Dashboard"}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  85 |                     </h1>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  86 |                 </div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  87 |                 <div className="flex items-center gap-4">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  88 |                     <div className="h-8 w-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-700 font-bold text-xs">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  89 |                         AD
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  90 |                     </div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  91 |                 </div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  92 |             </header>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  93 |             <div className="p-4 md:p-8">
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  94 |                 {children}
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  95 |             </div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  96 |         </main>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  97 |     </div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->  98 | );
-      | ^^^
-   99 | }
-  100 |
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
-Return statement is not allowed here
+https://nextjs.org/docs/messages/module-not-found
+[00:06:00.517] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
 
 Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
   Client Component Browser:
-    ./app/admin/dashboard/layout.tsx [Client Component Browser]
-    ./app/admin/dashboard/layout.tsx [Server Component]
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
 
   Client Component SSR:
-    ./app/admin/dashboard/layout.tsx [Client Component SSR]
-    ./app/admin/dashboard/layout.tsx [Server Component]
-[01:45:15.823] Server  LOG     ✓ Compiled in 432ms
-[01:54:27.744] Server  WARN    Supabase URL or Key missing. Database features will fail.
-[01:54:47.889] Server  WARN    Supabase URL or Key missing. Database features will fail.
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:02.301] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
+  Client Component Browser:
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:03.535] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
+  Client Component Browser:
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:09.531] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
+  Client Component Browser:
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:09.531] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
+  Client Component Browser:
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:09.531] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
+  Client Component Browser:
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:11.529] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
+  Client Component Browser:
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:45.517] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
+  Client Component Browser:
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:45.517] Browser ERROR   ./lib/data.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path';
+  3 | import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
+  4 | import { supabase } from './supabase';
+
+Import traces:
+  Server Component:
+    ./lib/data.ts
+    ./lib/actions.ts
+
+  Client Component Browser:
+    ./lib/data.ts [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Client Component Browser]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/data.ts [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Client Component SSR]
+    ./app/admin/dashboard/finance/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:48.653] Server  LOG     ✓ Compiled in 165ms
+[00:07:04.501] Server  WARN    Supabase URL or Key missing. Database features will fail.
+[00:08:23.835] Server  LOG     ✓ Compiled in 96ms
+[00:08:25.988] Server  LOG     ✓ Compiled in 92ms
+[00:08:27.700] Server  LOG     ✓ Compiled in 100ms
+[00:09:12.472] Server  WARN    Supabase URL or Key missing. Database features will fail.
+[00:13:11.445] Server  WARN    Supabase URL or Key missing. Database features will fail.
+[00:21:55.981] Server  LOG     ✓ Compiled in 85ms
+[00:22:15.704] Server  LOG     ✓ Compiled in 201ms
+[00:22:16.027] Server  WARN    Supabase URL or Key missing. Database features will fail.
+[00:22:29.988] Server  LOG     ✓ Compiled in 200ms
+[00:22:42.041] Server  LOG     ✓ Compiled in 228ms
+[00:31:37.264] Server  WARN    Supabase URL or Key missing. Database features will fail.
+[00:39:01.882] Server  LOG     ✓ Compiled in 85ms
+[00:39:22.846] Server  LOG     ✓ Compiled in 236ms
+[00:39:24.807] Server  WARN    Supabase URL or Key missing. Database features will fail.
+[01:29:15.301] Server  WARN    Supabase URL or Key missing. Database features will fail.

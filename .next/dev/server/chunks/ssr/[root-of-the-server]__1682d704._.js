@@ -174,7 +174,7 @@ async function MembersPage() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 className: "h-12 px-4 align-middle font-medium text-slate-500",
-                                                children: "Phone"
+                                                children: "Status"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/dashboard/members/page.tsx",
                                                 lineNumber: 21,
@@ -182,7 +182,7 @@ async function MembersPage() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                 className: "h-12 px-4 align-middle font-medium text-slate-500",
-                                                children: "Status"
+                                                children: "Progress"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/dashboard/members/page.tsx",
                                                 lineNumber: 22,
@@ -248,7 +248,14 @@ async function MembersPage() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: "p-4 align-middle",
-                                                    children: member.personal?.phone
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-teal-500 text-white shadow hover:bg-teal-500/80",
+                                                        children: member.status || 'PENDING'
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/admin/dashboard/members/page.tsx",
+                                                        lineNumber: 37,
+                                                        columnNumber: 49
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/admin/dashboard/members/page.tsx",
                                                     lineNumber: 36,
@@ -256,17 +263,39 @@ async function MembersPage() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                     className: "p-4 align-middle",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-teal-500 text-white shadow hover:bg-teal-500/80",
-                                                        children: member.status || 'PENDING'
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/admin/dashboard/members/page.tsx",
-                                                        lineNumber: 38,
-                                                        columnNumber: 49
-                                                    }, this)
-                                                }, void 0, false, {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "w-24 h-2 bg-slate-100 rounded-full overflow-hidden",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "h-full bg-teal-500 transition-all",
+                                                                style: {
+                                                                    width: `${member.currentStep / 3 * 100}%`
+                                                                }
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/admin/dashboard/members/page.tsx",
+                                                                lineNumber: 43,
+                                                                columnNumber: 53
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/admin/dashboard/members/page.tsx",
+                                                            lineNumber: 42,
+                                                            columnNumber: 49
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-xs text-slate-500",
+                                                            children: [
+                                                                member.currentStep,
+                                                                "/3 steps"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/admin/dashboard/members/page.tsx",
+                                                            lineNumber: 48,
+                                                            columnNumber: 49
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/app/admin/dashboard/members/page.tsx",
-                                                    lineNumber: 37,
+                                                    lineNumber: 41,
                                                     columnNumber: 45
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -274,7 +303,7 @@ async function MembersPage() {
                                                     children: member.address?.city
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/admin/dashboard/members/page.tsx",
-                                                    lineNumber: 42,
+                                                    lineNumber: 50,
                                                     columnNumber: 45
                                                 }, this)
                                             ]

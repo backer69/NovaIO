@@ -20,6 +20,48 @@
       },
       "status": "PENDING",
       "createdAt": "2026-02-05T12:41:32.388Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "currentStep": 2,
+      "personal": {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "phone": "79001122"
+      },
+      "address": {
+        "street": "123 Maple St",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "zipCode": "00100"
+      },
+      "motivation": {
+        "message": "Interested in tech innovation"
+      },
+      "status": "PENDING",
+      "createdAt": "2026-02-05T14:20:00.000Z"
+    },
+    {
+      "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+      "currentStep": 3,
+      "personal": {
+        "firstName": "Robert",
+        "lastName": "Mugabe",
+        "email": "robert.m@tech.co.zw",
+        "phone": "777888999"
+      },
+      "address": {
+        "street": "456 Oak Rd",
+        "city": "Harare",
+        "country": "Zimbabwe",
+        "zipCode": ""
+      },
+      "motivation": {
+        "message": "Looking to expand my network"
+      },
+      "status": "APPROVED",
+      "createdAt": "2026-02-04T10:00:00.000Z"
     }
   ],
   "admins": [
@@ -31,5 +73,14 @@
     }
   ],
   "finance": [],
-  "calendar": []
+  "calendar": [
+    {
+      "id": "c1",
+      "title": "Future of AI Webinar",
+      "startAt": "2026-03-10T10:00:00Z",
+      "endAt": "2026-03-10T12:00:00Z",
+      "meetLink": "https://meet.google.com/abc-defg-hij",
+      "createdAt": "2026-02-01T10:00:00Z"
+    }
+  ]
 }

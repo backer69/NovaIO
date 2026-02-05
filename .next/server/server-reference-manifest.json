@@ -9,13 +9,13 @@
           "filename": "lib/auth.ts"
         },
         "app/admin/dashboard/calendar/page": {
-          "moduleId": 1048,
+          "moduleId": 84420,
           "async": false,
           "exportedName": "logout",
           "filename": "lib/auth.ts"
         },
         "app/admin/dashboard/finance/page": {
-          "moduleId": 6872,
+          "moduleId": 2222,
           "async": false,
           "exportedName": "logout",
           "filename": "lib/auth.ts"
@@ -42,6 +42,36 @@
       },
       "filename": "lib/auth.ts",
       "exportedName": "logout"
+    },
+    "408bbdbb380ef4dcd7b34cacf71d467f8802be9b10": {
+      "workers": {
+        "app/admin/dashboard/calendar/page": {
+          "moduleId": 84420,
+          "async": false,
+          "exportedName": "createCalendarEventAction",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/calendar/page": "action-browser"
+      },
+      "filename": "lib/actions.ts",
+      "exportedName": "createCalendarEventAction"
+    },
+    "40b5ea586a403e186ffd0b0b9aa89766763e2ca7ca": {
+      "workers": {
+        "app/admin/dashboard/finance/page": {
+          "moduleId": 2222,
+          "async": false,
+          "exportedName": "createFinanceEntryAction",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/finance/page": "action-browser"
+      },
+      "filename": "lib/actions.ts",
+      "exportedName": "createFinanceEntryAction"
     },
     "401315233b1382fd5239a1ce00879dac36d9b91bcc": {
       "workers": {

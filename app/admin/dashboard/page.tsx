@@ -1,6 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { getDashboardStats } from "@/lib/data";
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
+    const stats = await getDashboardStats();
+
     return (
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <Card>
@@ -9,8 +12,8 @@ export default function DashboardPage() {
                     <div className="text-teal-500">💰</div>
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">$45,231.89</div>
-                    <p className="text-xs text-slate-500">+20.1% from last month</p>
+                    <div className="text-2xl font-bold">${stats.totalRevenue.toLocaleString()}</div>
+                    <p className="text-xs text-slate-500">Real-time revenue</p>
                 </CardContent>
             </Card>
 
@@ -20,8 +23,8 @@ export default function DashboardPage() {
                     <div className="text-teal-500">👥</div>
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">+2350</div>
-                    <p className="text-xs text-slate-500">+180.1% from last month</p>
+                    <div className="text-2xl font-bold">+{stats.totalRegistrations}</div>
+                    <p className="text-xs text-slate-500">Total registered users</p>
                 </CardContent>
             </Card>
 
@@ -31,8 +34,8 @@ export default function DashboardPage() {
                     <div className="text-teal-500">📹</div>
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">12</div>
-                    <p className="text-xs text-slate-500">3 live now</p>
+                    <div className="text-2xl font-bold">{stats.activeWebinars}</div>
+                    <p className="text-xs text-slate-500">Upcoming or live</p>
                 </CardContent>
             </Card>
 
@@ -42,7 +45,8 @@ export default function DashboardPage() {
                     <div className="text-teal-500">⚠️</div>
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">7</div>
+                    <div className="text-2xl font-bold">{stats.pendingRegistrations}</div>
+                    <p className="text-xs text-slate-500">Needs review</p>
                 </CardContent>
             </Card>
         </div>

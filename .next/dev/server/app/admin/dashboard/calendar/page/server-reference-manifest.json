@@ -3,7 +3,7 @@
     "00dcae2ad9f7ba68b0aa16deeeec50b4b81ae610d5": {
       "workers": {
         "app/admin/dashboard/calendar/page": {
-          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/calendar/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/calendar/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "logout",
           "filename": "lib/auth.ts"
@@ -14,6 +14,21 @@
       },
       "exportedName": "logout",
       "filename": "lib/auth.ts"
+    },
+    "40d9bc2c5bec3b41d2a53fe5db76c0732d8f057569": {
+      "workers": {
+        "app/admin/dashboard/calendar/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/calendar/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createCalendarEventAction",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/calendar/page": "action-browser"
+      },
+      "exportedName": "createCalendarEventAction",
+      "filename": "lib/actions.ts"
     }
   },
   "edge": {}

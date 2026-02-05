@@ -3,7 +3,7 @@
     "003d4005e6bab4f4f45649170d15ae99bc807b6b19": {
       "workers": {
         "app/admin/dashboard/finance/page": {
-          "moduleId": 6872,
+          "moduleId": 2222,
           "async": false,
           "exportedName": "logout",
           "filename": "lib/auth.ts"
@@ -14,6 +14,21 @@
       },
       "exportedName": "logout",
       "filename": "lib/auth.ts"
+    },
+    "40b5ea586a403e186ffd0b0b9aa89766763e2ca7ca": {
+      "workers": {
+        "app/admin/dashboard/finance/page": {
+          "moduleId": 2222,
+          "async": false,
+          "exportedName": "createFinanceEntryAction",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/finance/page": "action-browser"
+      },
+      "exportedName": "createFinanceEntryAction",
+      "filename": "lib/actions.ts"
     }
   },
   "edge": {}

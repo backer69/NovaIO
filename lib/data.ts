@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import { DatabaseSchema, RegistrationRecord, AdminCredentials } from './types';
+import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
 import { supabase } from './supabase';
+import { v4 as uuidv4 } from 'uuid';
 
 const DB_PATH = path.join(process.cwd(), 'src', 'data', 'db.json');
 
@@ -140,4 +141,127 @@ export const getAdminByEmail = async (email: string): Promise<AdminCredentials |
     // Fallback
     const db = readLocalDb();
     return db.admins.find(admin => admin.email === email);
+}
+
+// --- Finance Methods ---
+
+export const getFinanceEntries = async (): Promise<FinanceEntry[]> => {
+    if (isSupabaseEnabled()) {
+        try {
+            const { data, error } = await supabase
+                .from('finance_entries')
+                .select('*')
+                .order('date', { ascending: false });
+            if (error) throw error;
+            return (data || []).map((row: any) => ({
+                id: row.id,
+                type: row.type,
+                amount: row.amount,
+                category: row.category,
+                description: row.description,
+                date: row.date,
+                createdAt: row.created_at
+            }));
+        } catch (e) {
+            console.warn('Fallback to local finance');
+        }
+    }
+    return readLocalDb().finance;
+}
+
+export const addFinanceEntry = async (entry: Omit<FinanceEntry, 'id' | 'createdAt'>) => {
+    if (isSupabaseEnabled()) {
+        try {
+            const { error } = await supabase.from('finance_entries').insert(entry);
+            if (error) throw error;
+            return;
+        } catch (e) {
+            console.error('Supabase write failed', e);
+        }
+    }
+    const db = readLocalDb();
+    const newEntry: FinanceEntry = {
+        ...entry,
+        id: uuidv4(),
+        createdAt: new Date().toISOString()
+    };
+    db.finance.push(newEntry);
+    writeLocalDb(db);
+}
+
+// --- Calendar Methods ---
+
+export const getCalendarEvents = async (): Promise<CalendarEvent[]> => {
+    if (isSupabaseEnabled()) {
+        try {
+            const { data, error } = await supabase
+                .from('calendar_events')
+                .select('*')
+                .order('start_at', { ascending: true });
+            if (error) throw error;
+            return (data || []).map((row: any) => ({
+                id: row.id,
+                title: row.title,
+                startAt: row.start_at,
+                endAt: row.end_at,
+                meetLink: row.meet_link,
+                createdAt: row.created_at
+            }));
+        } catch (e) {
+            console.warn('Fallback to local calendar');
+        }
+    }
+    return readLocalDb().calendar;
+}
+
+export const addCalendarEvent = async (event: Omit<CalendarEvent, 'id' | 'createdAt'>) => {
+    if (isSupabaseEnabled()) {
+        try {
+            // Mapping to snake_case for supabase
+            const row = {
+                title: event.title,
+                start_at: event.startAt,
+                end_at: event.endAt,
+                meet_link: event.meetLink
+            };
+            const { error } = await supabase.from('calendar_events').insert(row);
+            if (error) throw error;
+            return;
+        } catch (e) {
+            console.error('Supabase write failed', e);
+        }
+    }
+    const db = readLocalDb();
+    const newEvent: CalendarEvent = {
+        ...event,
+        id: uuidv4(),
+        createdAt: new Date().toISOString()
+    };
+    db.calendar.push(newEvent);
+    writeLocalDb(db);
+}
+
+// --- Dashboard Stats ---
+
+export const getDashboardStats = async () => {
+    const registrations = await getRegistrations();
+    const finance = await getFinanceEntries();
+    const calendar = await getCalendarEvents();
+
+    const totalRevenue = finance
+        .filter(e => e.type === 'INCOME')
+        .reduce((sum, e) => sum + Number(e.amount), 0);
+
+    const pendingRegistrations = registrations.filter(r => r.status === 'PENDING').length;
+
+    // Logic for "active webinars": let's say events that haven't ended yet
+    const now = new Date();
+    const activeWebinars = calendar.filter(e => new Date(e.endAt) > now).length;
+
+    return {
+        totalRevenue,
+        totalRegistrations: registrations.length,
+        activeWebinars,
+        pendingRegistrations
+    };
 }
