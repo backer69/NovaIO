@@ -1,0 +1,79 @@
+{
+  "node": {
+    "003d4005e6bab4f4f45649170d15ae99bc807b6b19": {
+      "workers": {
+        "app/admin/dashboard/analytics/page": {
+          "moduleId": 40022,
+          "async": false,
+          "exportedName": "logout",
+          "filename": "lib/auth.ts"
+        },
+        "app/admin/dashboard/calendar/page": {
+          "moduleId": 1048,
+          "async": false,
+          "exportedName": "logout",
+          "filename": "lib/auth.ts"
+        },
+        "app/admin/dashboard/finance/page": {
+          "moduleId": 6872,
+          "async": false,
+          "exportedName": "logout",
+          "filename": "lib/auth.ts"
+        },
+        "app/admin/dashboard/members/page": {
+          "moduleId": 6534,
+          "async": false,
+          "exportedName": "logout",
+          "filename": "lib/auth.ts"
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": 33639,
+          "async": false,
+          "exportedName": "logout",
+          "filename": "lib/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/analytics/page": "action-browser",
+        "app/admin/dashboard/calendar/page": "action-browser",
+        "app/admin/dashboard/finance/page": "action-browser",
+        "app/admin/dashboard/members/page": "action-browser",
+        "app/admin/dashboard/page": "action-browser"
+      },
+      "filename": "lib/auth.ts",
+      "exportedName": "logout"
+    },
+    "401315233b1382fd5239a1ce00879dac36d9b91bcc": {
+      "workers": {
+        "app/admin/login/page": {
+          "moduleId": 52483,
+          "async": false,
+          "exportedName": "login",
+          "filename": "lib/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/login/page": "action-browser"
+      },
+      "filename": "lib/auth.ts",
+      "exportedName": "login"
+    },
+    "406ac11d5f1ad3b879a9a71a4119e3be1c63e2e161": {
+      "workers": {
+        "app/register/motivation/page": {
+          "moduleId": 55763,
+          "async": false,
+          "exportedName": "submitRegistration",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/register/motivation/page": "action-browser"
+      },
+      "filename": "lib/actions.ts",
+      "exportedName": "submitRegistration"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "Y/9ZgHx7sfAassmf52F13QThSz8q1r+HAWFmNe+r8KA="
+}

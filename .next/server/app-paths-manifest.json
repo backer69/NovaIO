@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/dashboard/analytics/page": "app/admin/dashboard/analytics/page.js",
+  "/admin/dashboard/calendar/page": "app/admin/dashboard/calendar/page.js",
+  "/admin/dashboard/finance/page": "app/admin/dashboard/finance/page.js",
+  "/admin/dashboard/members/page": "app/admin/dashboard/members/page.js",
+  "/admin/dashboard/page": "app/admin/dashboard/page.js",
+  "/admin/login/page": "app/admin/login/page.js",
+  "/page": "app/page.js",
+  "/register/address/page": "app/register/address/page.js",
+  "/register/motivation/page": "app/register/motivation/page.js",
+  "/register/page": "app/register/page.js",
+  "/register/success/page": "app/register/success/page.js"
+}

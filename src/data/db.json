@@ -1,0 +1,35 @@
+{
+  "registrations": [
+    {
+      "id": "4cece779-6f91-4b4e-afe5-913320a7bd8a",
+      "currentStep": 3,
+      "personal": {
+        "firstName": "NGANJIYIMANA",
+        "lastName": "Leon Amiel",
+        "email": "amielnganji0@gmail.com",
+        "phone": "64568087"
+      },
+      "address": {
+        "street": "H9C9+7PH",
+        "city": "Bujumbura",
+        "country": "Burundi",
+        "zipCode": ""
+      },
+      "motivation": {
+        "message": "i'm full of joyce to be among you"
+      },
+      "status": "PENDING",
+      "createdAt": "2026-02-05T12:41:32.388Z"
+    }
+  ],
+  "admins": [
+    {
+      "id": "admin-1",
+      "email": "admin@nova.io",
+      "passwordHash": "admin123",
+      "name": "Super Admin"
+    }
+  ],
+  "finance": [],
+  "calendar": []
+}

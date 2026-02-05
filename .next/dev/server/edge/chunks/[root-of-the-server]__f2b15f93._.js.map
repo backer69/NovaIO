@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\r\nimport type { NextRequest } from 'next/server';\r\n\r\nexport function middleware(request: NextRequest) {\r\n    // Check if the path starts with /admin/dashboard\r\n    if (request.nextUrl.pathname.startsWith('/admin/dashboard')) {\r\n        // Check for the admin session cookie\r\n        const adminSession = request.cookies.get('admin_session');\r\n\r\n        // If no session, redirect to login\r\n        if (!adminSession) {\r\n            return NextResponse.redirect(new URL('/admin/login', request.url));\r\n        }\r\n    }\r\n\r\n    return NextResponse.next();\r\n}\r\n\r\nexport const config = {\r\n    matcher: '/admin/dashboard/:path*',\r\n};\r\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;;AAGO,SAAS,WAAW,OAAoB;IAC3C,iDAAiD;IACjD,IAAI,QAAQ,OAAO,CAAC,QAAQ,CAAC,UAAU,CAAC,qBAAqB;QACzD,qCAAqC;QACrC,MAAM,eAAe,QAAQ,OAAO,CAAC,GAAG,CAAC;QAEzC,mCAAmC;QACnC,IAAI,CAAC,cAAc;YACf,OAAO,gMAAY,CAAC,QAAQ,CAAC,IAAI,IAAI,gBAAgB,QAAQ,GAAG;QACpE;IACJ;IAEA,OAAO,gMAAY,CAAC,IAAI;AAC5B;AAEO,MAAM,SAAS;IAClB,SAAS;AACb"}}]
+}

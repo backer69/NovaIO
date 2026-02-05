@@ -1,0 +1,20 @@
+{
+  "node": {
+    "406ac11d5f1ad3b879a9a71a4119e3be1c63e2e161": {
+      "workers": {
+        "app/register/motivation/page": {
+          "moduleId": 55763,
+          "async": false,
+          "exportedName": "submitRegistration",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/register/motivation/page": "action-browser"
+      },
+      "exportedName": "submitRegistration",
+      "filename": "lib/actions.ts"
+    }
+  },
+  "edge": {}
+}
