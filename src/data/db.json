@@ -62,6 +62,27 @@
       },
       "status": "APPROVED",
       "createdAt": "2026-02-04T10:00:00.000Z"
+    },
+    {
+      "id": "a836b62d-7c79-477c-8bc0-7105b8e425a8",
+      "currentStep": 3,
+      "personal": {
+        "firstName": "harerimana",
+        "lastName": "doc",
+        "email": "john@gmail.com",
+        "phone": "+25764568087"
+      },
+      "address": {
+        "street": "H9C9+7PH",
+        "city": "Bujumbura",
+        "country": "Burundi",
+        "zipCode": ""
+      },
+      "motivation": {
+        "message": "n iwusovh; uhou"
+      },
+      "status": "PENDING",
+      "createdAt": "2026-02-06T06:26:32.266Z"
     }
   ],
   "admins": [
@@ -72,7 +93,17 @@
       "name": "Super Admin"
     }
   ],
-  "finance": [],
+  "finance": [
+    {
+      "type": "INCOME",
+      "amount": 200,
+      "category": "marketing",
+      "description": "orphans cote",
+      "date": "2026-02-06",
+      "id": "f840cf64-6803-4b21-a12f-1d03775e7440",
+      "createdAt": "2026-02-06T06:27:42.747Z"
+    }
+  ],
   "calendar": [
     {
       "id": "c1",

@@ -1,5 +1,20 @@
 {
   "node": {
+    "40ce4610ee2cca951a1fe3d8486398af3ac6c1d41c": {
+      "workers": {
+        "app/register/motivation/page": {
+          "moduleId": "[project]/.next-internal/server/app/register/motivation/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "submitRegistration",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/register/motivation/page": "action-browser"
+      },
+      "filename": "lib/actions.ts",
+      "exportedName": "submitRegistration"
+    },
     "40bd10e7da003ae13511d42b6f0c1d70bb3db4e271": {
       "workers": {
         "app/admin/login/page": {
@@ -17,12 +32,6 @@
     },
     "00dcae2ad9f7ba68b0aa16deeeec50b4b81ae610d5": {
       "workers": {
-        "app/admin/dashboard/analytics/page": {
-          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/analytics/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "logout",
-          "filename": "lib/auth.ts"
-        },
         "app/admin/dashboard/calendar/page": {
           "moduleId": "[project]/.next-internal/server/app/admin/dashboard/calendar/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -49,7 +58,6 @@
         }
       },
       "layer": {
-        "app/admin/dashboard/analytics/page": "action-browser",
         "app/admin/dashboard/calendar/page": "action-browser",
         "app/admin/dashboard/finance/page": "action-browser",
         "app/admin/dashboard/members/page": "action-browser",
