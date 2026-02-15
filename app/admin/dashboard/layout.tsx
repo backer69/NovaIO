@@ -14,6 +14,7 @@ const navItems = [
     { href: "/admin/dashboard/analytics", label: "Analytics", icon: "📈" },
     { href: "/admin/dashboard/finance", label: "Finance", icon: "💰" },
     { href: "/admin/dashboard/calendar", label: "Calendar", icon: "📅" },
+    { href: "/admin/dashboard/health", label: "Health", icon: "✅" },
 ];
 
 export default function DashboardLayout({

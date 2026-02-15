@@ -1,6 +1,6 @@
 {
-  "/admin/dashboard/calendar/page": "app/admin/dashboard/calendar/page.js",
-  "/admin/dashboard/finance/page": "app/admin/dashboard/finance/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/dashboard/health/page": "app/admin/dashboard/health/page.js",
   "/admin/dashboard/members/page": "app/admin/dashboard/members/page.js",
   "/admin/dashboard/page": "app/admin/dashboard/page.js",
   "/admin/login/page": "app/admin/login/page.js",

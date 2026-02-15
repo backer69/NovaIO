@@ -83,6 +83,27 @@
       },
       "status": "PENDING",
       "createdAt": "2026-02-06T06:26:32.266Z"
+    },
+    {
+      "id": "6c77076e-af8c-4f65-9663-8e41c84444ed",
+      "currentStep": 3,
+      "personal": {
+        "firstName": "NGANJIYIMANA",
+        "lastName": "Leon Amiel",
+        "email": "amielnganji0@gmail.com",
+        "phone": "+25764568087"
+      },
+      "address": {
+        "street": "H9C9+7PH",
+        "city": "Bujumbura",
+        "country": "Burundi",
+        "zipCode": ""
+      },
+      "motivation": {
+        "message": "ljbkjbnckjsbov"
+      },
+      "status": "PENDING",
+      "createdAt": "2026-02-15T19:00:53.648Z"
     }
   ],
   "admins": [

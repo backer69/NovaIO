@@ -1,0 +1,80 @@
+{
+  "node": {
+    "00dcae2ad9f7ba68b0aa16deeeec50b4b81ae610d5": {
+      "workers": {
+        "app/admin/dashboard/health/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/health/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logout",
+          "filename": "lib/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/health/page": "action-browser"
+      },
+      "exportedName": "logout",
+      "filename": "lib/auth.ts"
+    },
+    "0082d0072a188b453704870eb9566079e84316be84": {
+      "workers": {
+        "app/admin/dashboard/health/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/health/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "adminHealthCheck",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/health/page": "rsc"
+      },
+      "exportedName": "adminHealthCheck",
+      "filename": "lib/actions.ts"
+    },
+    "40ce4610ee2cca951a1fe3d8486398af3ac6c1d41c": {
+      "workers": {
+        "app/admin/dashboard/health/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/health/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "submitRegistration",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/health/page": "rsc"
+      },
+      "exportedName": "submitRegistration",
+      "filename": "lib/actions.ts"
+    },
+    "40d9bc2c5bec3b41d2a53fe5db76c0732d8f057569": {
+      "workers": {
+        "app/admin/dashboard/health/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/health/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createCalendarEventAction",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/health/page": "rsc"
+      },
+      "exportedName": "createCalendarEventAction",
+      "filename": "lib/actions.ts"
+    },
+    "40e49910126a85fc34196c800eae66036dea9ea7fc": {
+      "workers": {
+        "app/admin/dashboard/health/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/health/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createFinanceEntryAction",
+          "filename": "lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/health/page": "rsc"
+      },
+      "exportedName": "createFinanceEntryAction",
+      "filename": "lib/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,6 +1,7 @@
 'use server';
 
 import { addRegistration, addFinanceEntry, addCalendarEvent } from "./data";
+import { supabaseAdmin } from "./supabase";
 import { RegistrationDraft } from "./types";
 import { v4 as uuidv4 } from 'uuid';
 import { revalidatePath } from 'next/cache';
@@ -69,4 +70,21 @@ export async function createCalendarEventAction(formData: FormData) {
 
     revalidatePath('/admin/dashboard/calendar');
     revalidatePath('/admin/dashboard');
+}
+
+export async function adminHealthCheck() {
+    if (!supabaseAdmin) {
+        return { ok: false, error: 'Supabase admin client not configured' };
+    }
+
+    const { error } = await supabaseAdmin
+        .from('admin_users')
+        .select('id')
+        .limit(1);
+
+    if (error) {
+        return { ok: false, error: error.message };
+    }
+
+    return { ok: true };
 }

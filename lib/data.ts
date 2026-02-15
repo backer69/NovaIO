@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { DatabaseSchema, RegistrationRecord, AdminCredentials, FinanceEntry, CalendarEvent } from './types';
-import { supabase } from './supabase';
+import { supabase, supabaseAdmin } from './supabase';
 import { v4 as uuidv4 } from 'uuid';
 
 const DB_PATH = path.join(process.cwd(), 'src', 'data', 'db.json');
@@ -9,6 +9,10 @@ const DB_PATH = path.join(process.cwd(), 'src', 'data', 'db.json');
 // --- Supabase Check ---
 const isSupabaseEnabled = () => {
     return !!process.env.NEXT_PUBLIC_SUPABASE_URL && !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY && !!supabase;
+}
+
+const isSupabaseAdminEnabled = () => {
+    return !!process.env.NEXT_PUBLIC_SUPABASE_URL && !!process.env.SUPABASE_SERVICE_ROLE_KEY && !!supabaseAdmin;
 }
 
 // --- Local JSON Helpers ---
@@ -117,9 +121,9 @@ export const addRegistration = async (registration: RegistrationRecord) => {
 }
 
 export const getAdminByEmail = async (email: string): Promise<AdminCredentials | undefined> => {
-    if (isSupabaseEnabled()) {
+    if (isSupabaseAdminEnabled()) {
         try {
-            const { data, error } = await supabase
+            const { data, error } = await supabaseAdmin
                 .from('admin_users')
                 .select('*')
                 .eq('email', email)
@@ -132,6 +136,9 @@ export const getAdminByEmail = async (email: string): Promise<AdminCredentials |
                     passwordHash: data.password_hash,
                     name: data.name
                 };
+            }
+            if (error) {
+                console.error('Supabase admin error:', error);
             }
         } catch (e) {
             // ignore

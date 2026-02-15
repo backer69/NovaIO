@@ -3,6 +3,7 @@ import { createClient } from '@supabase/supabase-js'
 // Environment variables checks
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
 if (!supabaseUrl || !supabaseAnonKey) {
     // In development, this might happen during build before env vars are set properly
@@ -12,4 +13,8 @@ if (!supabaseUrl || !supabaseAnonKey) {
 
 export const supabase = (supabaseUrl && supabaseAnonKey)
     ? createClient(supabaseUrl, supabaseAnonKey)
+    : null as any;
+
+export const supabaseAdmin = (supabaseUrl && supabaseServiceRoleKey)
+    ? createClient(supabaseUrl, supabaseServiceRoleKey)
     : null as any;
