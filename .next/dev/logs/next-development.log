@@ -55,3 +55,10 @@
 [00:16:48.645] Server  ERROR   Supabase admin error: {}
 [00:17:00.235] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:17:37.961] Server  ERROR   Supabase admin error: {}
+[00:22:26.029] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:37.499] Server  ERROR   Supabase Write Failed, falling back to local: {}
+[00:23:00.311] Server  ERROR   Supabase admin error: {}
+[00:23:18.699] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:26.410] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:08.625] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:23.283] Server  ERROR   Supabase admin error: {}
