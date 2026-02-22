@@ -104,6 +104,27 @@
       },
       "status": "PENDING",
       "createdAt": "2026-02-15T19:00:53.648Z"
+    },
+    {
+      "id": "182f1c2f-2e25-484d-b6a8-61a4cc77f8c8",
+      "currentStep": 3,
+      "personal": {
+        "firstName": "Sunzu",
+        "lastName": "ben florice",
+        "email": "welivebenfloricesunzu@gmail.com",
+        "phone": "25764159118"
+      },
+      "address": {
+        "street": "Kanyosha ",
+        "city": "Bujumbura",
+        "country": "Burundi ",
+        "zipCode": "000"
+      },
+      "motivation": {
+        "message": "Ffoyfodotdotwotdo"
+      },
+      "status": "PENDING",
+      "createdAt": "2026-02-21T18:42:52.246Z"
     }
   ],
   "admins": [
@@ -123,6 +144,24 @@
       "date": "2026-02-06",
       "id": "f840cf64-6803-4b21-a12f-1d03775e7440",
       "createdAt": "2026-02-06T06:27:42.747Z"
+    },
+    {
+      "type": "INCOME",
+      "amount": 300,
+      "category": "marketing",
+      "description": "orp",
+      "date": "2026-02-22",
+      "id": "28a090c9-394f-4213-95cd-83d9aab4cb40",
+      "createdAt": "2026-02-22T14:25:15.993Z"
+    },
+    {
+      "type": "INCOME",
+      "amount": 300,
+      "category": "marketing",
+      "description": "orp",
+      "date": "2026-02-22",
+      "id": "e99f8bc5-9d79-4944-a925-6274ced27123",
+      "createdAt": "2026-02-22T14:25:16.805Z"
     }
   ],
   "calendar": [

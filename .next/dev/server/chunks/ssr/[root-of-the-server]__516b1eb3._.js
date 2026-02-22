@@ -18,7 +18,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2
 ;
 // Environment variables checks
 const supabaseUrl = ("TURBOPACK compile-time value", "https://avwffulngozklvboiymh.supabase.co");
-const supabaseAnonKey = ("TURBOPACK compile-time value", "sb_publishable_sxpq-Px6d5gNQ3i6A0frPQ_VdqalxKY");
+const supabaseAnonKey = ("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2d2ZmdWxuZ296a2x2Ym9peW1oIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExODI0OTAsImV4cCI6MjA4Njc1ODQ5MH0.zn9aeiSEl2qD3PAAKh6OV4PYHqhfowGmypySPEVSDZI");
 const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
 ;
@@ -63,7 +63,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$uuid$2f$dist
 const DB_PATH = __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["default"].join(process.cwd(), 'src', 'data', 'db.json');
 // --- Supabase Check ---
 const isSupabaseEnabled = ()=>{
-    return !!("TURBOPACK compile-time value", "https://avwffulngozklvboiymh.supabase.co") && !!("TURBOPACK compile-time value", "sb_publishable_sxpq-Px6d5gNQ3i6A0frPQ_VdqalxKY") && !!__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["supabase"];
+    return !!("TURBOPACK compile-time value", "https://avwffulngozklvboiymh.supabase.co") && !!("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2d2ZmdWxuZ296a2x2Ym9peW1oIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExODI0OTAsImV4cCI6MjA4Njc1ODQ5MH0.zn9aeiSEl2qD3PAAKh6OV4PYHqhfowGmypySPEVSDZI") && !!__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["supabase"];
 };
 const isSupabaseAdminEnabled = ()=>{
     return !!("TURBOPACK compile-time value", "https://avwffulngozklvboiymh.supabase.co") && !!process.env.SUPABASE_SERVICE_ROLE_KEY && !!__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$supabase$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["supabaseAdmin"];
